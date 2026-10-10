@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>decoration</title>
+    <link rel="icon" href="../images/furniture.png" sizes="180x180">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <title>Decoration</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="images/icon.png" type="image/png">
+
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (!localStorage.getItem("loggedIn")) {
+          window.location.href = "login.html"; // لو مش مسجل دخول، يرجعه للّوجن
+        }
+      });
+  </script> -->
+
+</head>
+<body>
+ <nav>
+  <img src="../images/icon.png" class="logo">
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="auth-buttons">
+    <a href="login.html" class="login-btn">Login</a>
+    <a href="signup.html" class="signup-btn">Sign Up</a>
+  </div>
+</nav>
+
+    <header>
+        <div class="eng" id="home">
+            <img src="../images/img1.jpg" alt="engineer">
+            <div class="info">
+                <h2>Sandra Smith</h2>
+                <p>Interior Design engineer</p>
+            </div>
+        </div>
+    </header>
+
+<!-- --------About Me--------- -->
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <!-- <div class="about-col-1">
+        <img src="../images/IMG-20250416-WA0161.jpg" alt="Sandra Smith">
+      </div> -->
+      <div class="about-col-2">
+        <h1 class="sub-title">About US</h1>
+        <br><br>
+        <p>I’m Sandra Smith, the founder and owner of an interior design company 
+          that specializes in creating functional, beautiful, and personalized spaces.
+          I believe that every space should reflect the unique vision of its owner. 
+          That’s why I focus on truly understanding my clients' needs and bringing 
+          their ideas to life with creativity, precision, and attention to detail.
+           My mission is to design spaces that not only look stunning but also feel just right.</p>
+          
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab(event, 'skills')">Skills</p>
+          <p class="tab-links" onclick="openTab(event, 'experience')">Experience</p>
+          <p class="tab-links" onclick="openTab(event, 'education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><b>Design & Technical Tools:</b>Proficient use of AutoCAD, 
+              SketchUp, Revit, and 3ds Max to develop accurate and innovative 
+              design solutions.</li>
+            <li><b>Visualization & Graphics:</b> High-quality visual presentations 
+              using Adobe Photoshop, Illustrator, 
+              and InDesign to bring concepts to life.</li>
+            <li><b>Concept Development:</b> Strong focus on mood boards, color schemes, 
+              and material selection to align each project with the client’s vision and identity</li>
+            <li><b>Project Management:</b> Efficient coordination with clients, budget planning, 
+              and scheduling to ensure timely and seamless project delivery.</li>
+            <li><b>Other Strengths:</b> Exceptional attention to detail, 
+              creative problem-solving, clear and professional communication, 
+              and flexibility to adapt to a wide range of design styles.</li>
+          </ul>
+        </div>
+
+        <div id="large">
+          <div class="tab-contents " id="experience">
+            <p>With over <b style="color: rgb(209, 3, 3);">7 years of hands-on experience </b>
+              in the field of interior design, our founder, Sandra Smith, has worked with leading design 
+              studios and architectural firms across Egypt and the Gulf region. This diverse background 
+              has contributed to the company’s deep understanding of regional styles, functional requirements, 
+              and high-end design standards. <br> <br> <b style="color: rgb(98, 6, 24);">Our portfolio includes a wide range of projects, such as:</b> </p>
+            <ul style="padding-left: 30px;">
+              <li><b style="color: rgb(209, 3, 3);">  Luxury Residential Interiors: </b>Personalized and elegant spaces 
+                tailored to individual lifestyles.</li>
+              <li><b style="color: rgb(209, 3, 3);">  Commercial & Retail Spaces: </b>Functional, brand-driven environments 
+                that enhance customer experience.</li>
+              <li><b style="color: rgb(209, 3, 3);">  Boutique Hotels & Hospitality: </b>Sophisticated interiors that create 
+                memorable guest experiences.</li>
+              <li><b style="color: rgb(209, 3, 3);">  Office & Co-Working Spaces: </b>Productive and inspiring work environments designed 
+                for modern professionals.</li>
+            </ul>
+            <p>We are actively involved in every phase of a project—from concept development and space planning 
+              to on-site supervision and final styling—ensuring consistency, quality, and client satisfaction 
+              at every step.</p>
+          </div>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <b  style="color: rgb(209, 3, 3);">Bachelor’s Degree in Interior Architecture</b>
+          <p>German University in Cairo (GUC)<br>
+            Graduated with distinction, with a strong academic focus on sustainable design, material studies, 
+            and human-centered interiors. This educational foundation continues to shape the company’s design 
+            philosophy, emphasizing functionality, environmental responsibility, and user experience.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-contents");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].classList.remove("active-tab");
+    }
+
+    tablinks = document.getElementsByClassName("tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active-link");
+    }
+
+    document.getElementById(tabName).classList.add("active-tab");
+    evt.currentTarget.classList.add("active-link");
+  }
+
+</script>
+<!-- ---------Intro Video Section-------- -->
+<section id="intro-video">
+  <video autoplay muted loop playsinline>
+    <source src="../video/vid1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+<!-- ----------------Services------------- -->
+  <section class="cards" id="services">
+    <h2 class="title">Services</h2>
+    <div class="content">
+      <div class="card">
+        <div class="icon">
+          <i class="fa-solid fa-paint-roller"></i>
+        </div>
+        <div class="info">
+        <h3>painting services</h3><br>
+        <p style="color:rgb(71, 49, 21) ">As an interior designer, I offer professional painting services using the latest tools and techniques, such as the paint roller, to achieve a smooth, consistent, and elegant finish. Whether you're refreshing an existing space or preparing a new one, I help you choose the right colors and materials that match your style and complement the interior design, ensuring the best possible result."</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <i class="fa-solid fa-compass-drafting"></i>
+        </div>
+        <div class="info">
+          <h3> design and architectural drafting services</h3>
+          <p style="color:rgb(71, 49, 21) "> I provide detailed design and architectural drafting services 
+          using professional tools like the drafting compass to ensure balance 
+          and harmony in every space. From furniture layout and spatial planning to 
+          technical floor plans, I focus on precision and clarity to turn ideas into 
+          fully visualized, executable concepts."
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <i class="fa-solid fa-couch"></i>
+        </div>
+        <div class="info">
+          <h3>Interior Design Visualization Service</h3>
+          <p style="color: rgb(71, 49, 21)"> I use digital tools like this icon to visually 
+          communicate design concepts to my clients in a clear 
+          and simple way. The icon shown represents a key piece 
+          of furniture in any living room — the couch. It helps 
+          illustrate furniture layout, or serves as part of mood 
+          boards that guide clients in selecting the right pieces.
+          Through these minimal visual elements, I can present design 
+          ideas in an attractive and efficient manner, 
+          whether in presentations or interactive interior planning 
+          tools.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-------------------------------FAQ--------------------------------------->
+<br><br>
+<section id="faq" class="faq">
+    <h1 class="title">FAQ</h1>
+  
+    <div class="questions">
+      <button class="fac_question">
+        <b>What services do you offer?</b>
+        <span class="arrow">&#x25BC;</span>
+      </button>
+      <div class="fac_answer">
+        <p>We provide full web design and development solutions, as well as SEO optimization services.</p>
+      </div>
+    </div>
+  
+    <div class="questions">
+      <button class="fac_question">
+        <b>How long does a project take?</b>
+        <span class="arrow">&#x25BC;</span>
+      </button>
+      <div class="fac_answer">
+        <p>It depends on the project size, but typically it takes between two weeks and one month.</p>
+      </div>
+    </div>
+  
+    <div class="questions">
+      <button class="fac_question">
+        <b>Do you offer technical support after delivery?</b>
+        <span class="arrow">&#x25BC;</span>
+      </button>
+      <div class="fac_answer">
+        <p>Yes, we provide free technical support for 30 days after delivery, with optional extended support plans.</p>
+      </div>
+    </div>
+
+    <div class="questions">
+      <button class="fac_question">
+        <b>What payment methods do you accept?</b>
+        <span class="arrow">&#x25BC;</span>
+      </button>
+      <div class="fac_answer">
+        <p>We accept cerdit cards ,PayPal,and bank transfers.</p>
+      </div>
+    </div>
+
+    <div class="questions">
+      <button class="fac_question">
+        <b>Can i request changes after the project is delivered?</b>
+        <span class="arrow">&#x25BC;</span>
+      </button>
+      <div class="fac_answer">
+        <p>Yes, we offer a revision period to request any needed changes.</p>
+      </div>
+    </div>
+
+    <div class="questions">
+      <button class="fac_question">
+        <b>Is there a contract or agreement before starting?</b>
+        <span class="arrow">&#x25BC;</span>
+      </button>
+      <div class="fac_answer">
+        <p>Yes, we sign a clear agreement to outline deliverables, deadlines, and terms.</p>
+      </div>
+    </div>
+
+    <div class="questions">
+      <button class="fac_question">
+        <b>What services do you offer?</b>
+        <span class="arrow">&#x25BC;</span>
+      </button>
+      <div class="fac_answer">
+        <p>We provide full web design and development solutions, as well as SEO optimization services.</p>
+      </div>
+    </div>
+  </section>
+  
+    <br><br>
+    
+  <!-------------------------------footer--------------------------------------->
+  <footer >
+    <div class="foot">
+      <div class="row">
+         <div class="footer_col">
+            <h4 >Sandra Smith <br>for home designs&copy;</h4>
+         </div>
+         <div class="footer_col">
+            <h3>more designs</h3>
+            <ul>
+               <li><a href="http://instagram.com">Instagram</a></li>
+               <li><a href="http://linkedin.com">linkedin</a></li>
+            </ul>
+         </div>
+         <div class="footer_col">
+            <h3>Get help</h3>
+            <ul>
+              <li><a href="home.html#faq">FAQ</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+         </div>
+         <div class="footer_col">
+            <h3>Follow Me</h3>
+            <div class="social-link">
+               <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+               <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+               <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+               <a href="http://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a><br>
+              <!-- <button onclick="logout()">Logout</button> -->
+            </div>
+          </div>
+        </div>
+     </div>
+ </footer>
+  <script src="../JS/faq.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../JS/home.js"></script>
+</body>
+</html>

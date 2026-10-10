@@ -1,0 +1,151 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <title>Contact</title>
+    <link rel="icon" href="../images/furniture.png" sizes="180x180">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="../CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+ <body>
+   <nav>
+  <img src="../images/icon.png" class="logo">
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul id="nav-links">
+    <li><a href="./home.html#home">Home</a></li>
+    <li><a href="./home.html#about">About</a></li>
+    <li><a href="./home.html#services">Services</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="./home.html#faq">FAQ</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+  <div class="auth-buttons">
+    <a href="login.html" class="login-btn">Login</a>
+    <a href="signup.html" class="signup-btn">Sign Up</a>
+  </div>
+</nav>
+
+<div id="map-cont">
+<div id="map" >
+   
+</div>
+</div>
+<h1 class="capture">you can visit our projects locations and see our work</h1>
+<section>
+         <div class="contact_wrap">
+            <div class="left">
+           <h3>Keep in touch with us</h3><br>
+           <p><i class="fa-solid fa-phone"></i>+1 123 453 786</p><br>
+           <p><i class="fa-regular fa-envelope"></i>Sandra278@gmail.com</p><br>
+           <div class="icons">
+           <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+           <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+           <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+           <a href="http://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a><br>
+             </div><br><br>
+            </div>
+            <div class="right">
+               <form action="" method="post">
+                  <input type="text" name="Name" placeholder="Your Name" required><br>
+                  <br>
+                  <input type="email" name="email" placeholder="Your Email" required><br>
+                  <br>
+                  <textarea name="message" placeholder="Your Message" rows="5"cols="80" required></textarea>
+                   <br><br>
+                   <button type="submit">Send Message</button><br>
+               
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+<br><br><br>
+   <!--------------------- team section -------------------->
+   <h1 class="team-head">Our Team</h1>
+   <br>
+   <div class="team">
+   <div class="grid">
+      <div class="card">
+         <div class="card-img">
+            <img src="../images/woman-interior-designer_51.jpg" alt="">
+         </div>
+         <div class="card-body">
+            <h2>Lily Wilson</h2>
+            <h3>Design Assistant</h3>
+            <p><i class="fa-solid fa-phone"></i>+1 345 807 701</p>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-img">
+            <img src="../images/IMG-20250416-WA0119.jpg" alt="">
+         </div>
+         <div class="card-body">
+            <h2>Amanda Taylor</h2>
+            <h3>Project Manager</h3>
+            <p><i class="fa-solid fa-phone"></i>+1 430 208 509</p>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-img">
+            <img src="../images/istockphoto-1020230064-612x6122.jpg" alt="">
+         </div>
+         <div class="card-body">
+            <h2>Carla Paolo</h2>
+            <h3>Procurement Coordinator</h3>
+            <p><i class="fa-solid fa-phone"></i>+1 980 673 806</p>
+         </div>
+      </div>
+   </div>
+</div>
+<!-------------------------- footer ------------------------------->
+   <footer>
+      <div class="foot">
+         <div class="row">
+            <div class="footer_col">
+               <h4 >Sandra Smith <br>for home designs&copy;</h4>
+            </div>
+            <div class="footer_col">
+               <h3>more designs</h3>
+               <ul>
+                  <li><a href="http://instagram.com">Instagram</a></li>
+                  <li><a href="http://linkedin.com">linkedin</a></li>
+               </ul>
+            </div>
+            <div class="footer_col">
+               <h3>Get help</h3>
+               <ul>
+                 <li><a href="home.html#faq">FAQ</a></li>
+                 <li><a href="contact.html">Contact Me</a></li>
+               </ul>
+            </div>
+            <div class="footer_col">
+               <h3>Follow Me</h3>
+               <div class="social-link">
+                  <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="http://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a><br>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   
+    <script src="../JS/contact.js"></script>
+    <script
+   
+></script>
+ </body>
+ </html>

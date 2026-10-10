@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Decor Company</title>
+    <link rel="icon" href="../images/furniture.png" sizes="180x180">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <p>Please enter your credentials</p>
+        <form id="form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email" autofocus>
+
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" required placeholder="Enter your password" minlength="8" maxlength="20">
+
+            <!-- <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"> -->
+
+            <div class="buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" id="submit" value="Login"></input>
+            </div>
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </form>
+    </div>
+    <script>
+            const uses = [
+            { email: "user@1.com",password: "password1" },
+            { email: "user@2.com", password :"password2" },
+            { email: "user@3.com", password: "password3" },
+            { email: "fatma@1.com",password: "fatma123" },
+            { email: "asmaa@1.com", password: "asmaa123" },
+            { email: "malk@1.com", password: "malk1234" },
+            { email: "shimaa@1.com", password: "shimaa12" },
+            { email: "khadija@1.com", password: "khadija1" },
+            { email: "merna@1.com",password: "merna123" },
+            { email: "amira@1.com", password: "amira123" },
+            { email: "maha@1.com", password: "maha1234" },
+            { email: "heba@1.com", password: "heba1234" },
+            { email: "ahmad@1.com",password: "ahmed123" },
+            { email: "mohamed@1.com", password: "mohamed1" },
+            { email: "mahmoud@1.com",password: "mohamed1" },
+            { email: "mostafa@1.com", password: "mostafa1" },
+            { email: "ali@1.com", password: "ali12345" }
+
+
+];
+        var users=JSON.parse(localStorage.getItem('users'||[]));
+ 
+        document.getElementById('form').addEventListener('submit',(event)=>{
+            event.preventDefault();
+            const email=document.getElementById('email').value.trim();
+            const password = document.getElementById('pass').value;
+
+            if(!email|| !password){
+                alert("⚠️ All fields Required !");
+                return;
+            }
+            const user =users.find(u=>u.email===email&&u.password===password);
+            const userr =uses.find(u=>u.email===email&&u.password===password);
+            if(user || userr){
+                alert("✅ Log in successfully !");
+                window.location.href="home.html";
+            }else if(!user){
+                return{success:false,message:"⚠️ Wrong email or password !"};}
+                return{
+                    success:true,
+                    message:"✅ Log in successfully !",
+                    user:{
+                    id:user.id,
+                    email:user.email
+                    }
+                
+                };
+        });
+    </script>
+</body>
+</html>

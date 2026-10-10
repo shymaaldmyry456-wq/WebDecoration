@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+  background-image:  url("../images/IMG-20250516-WA0030.jpg");
+   background-size:  cover;
+    background-position: center;
+   background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffffa4;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #5a3825;
+}
+
+p {
+    text-align: center;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #8c5c3f;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #a9714b;
+}
+
+a {
+    color: #8c5c3f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+@media (max-width:768px) {
+    .buttons{
+     flex-direction: column;
+     gap: 10px;
+    }
+  body{
+    background-size:  190dvh;
+  }
+    
+}
+@media (max-width:1220px) {
+     body{
+    background-size:  190dvh;
+  }
+}

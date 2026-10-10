@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects </title>
+    <link rel="icon" href="../images/furniture.png" sizes="180x180">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="../CSS/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+<nav>
+  <img src="../images/icon.png" class="logo">
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul id="nav-links">
+    <li><a href="./home.html#home">Home</a></li>
+    <li><a href="./home.html#about">About</a></li>
+    <li><a href="./home.html#services">Services</a></li>
+    <li><a href="./projects.html">Projects</a></li>
+    <li><a href="./home.html#faq">FAQ</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+  <div class="auth-buttons">
+    <a href="login.html" class="login-btn">Login</a>
+    <a href="signup.html" class="signup-btn">Sign Up</a>
+  </div>
+</nav>
+    <div class="title">
+        <h1 class="sub-title">Our Project Gallery</h1>
+        <p>Discover our latest interior design works and inspirations.</p>
+    </div>      
+    
+ <!-- ----------------------------search-------------------------------------- -->
+    <section class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="search-box" placeholder="Search projects..." oninput="searchItems()" list="suggestion">
+        <datalist id="suggestion">
+            <option value="living room">
+                <option value="bedroom">
+                <option value="kitchen">
+                <option value="office">
+                <option value="dining room">
+                <option value="bathroom">
+                <option value="soft lighting">
+                <option value="natural">
+                <option value="wall art">
+                <option value="window">
+                <option value="cafe">
+                <option value="cozy">
+                <option value="table">
+                <option value="plants">
+                <option value="minimalist">
+                <option value="chair">
+                <option value="wooden">
+                <option value="mirror">
+        </datalist>
+        <button class="clear" onclick="clearSearch()">x</button>
+    </section>
+ <!-------------------------------projects--------------------------------------->
+    <section id="Project">    
+        <div class="pcard" data-search="living room soft lighting natural wall art window">
+            <img src="../images/lliving.jpg" alt="Project 1">
+            <div class="layer">
+                <h3>Project 1: Living Room</h3>
+                <p>Create a warm and inviting living room with neutral tones, plush seating, 
+                    and a woven coffee table, enhanced by soft natural lighting.</p>
+                    <a href= "https://www.linkedin.com/" target="_blank">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="pcard" data-search="cafe cozy soft lighting wall art table">
+            <img src="../images/out1.jpg" alt="Project 2" class="img">
+            <div class="layer">
+                <h3>Project 2: Cafe</h3>
+                <p>A vibrant, cozy dining space with rich orange tufted seating, elegant pendant lights,
+                     and lush greenery. wood flooring blend modern sophistication with warm</p>
+                    <a href= "https://www.linkedin.com/" target="_blank">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        
+        <div class="pcard" data-search="bedroom plants soft lighting cozy window">
+            <img src="../images/bed.jpg" alt="Project 3">
+            <div class="layer">
+                <h3>Project 3: Bedroom</h3>
+                <p>Transform your bedroom into a tranquil oasis with natural light, lush indoor plants,
+                    and a cozy quilted bedspread.Perfect harmony of nature and comfort.</p>
+                    <a href= "https://www.linkedin.com/" target="_blank">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="pcard" data-search="kitchen floral window">
+            <img src="../images/77.jpg" alt="Project 4">
+            <div class="layer">
+                <h3>Project 4: Elegant Kitchen</h3>
+                <p>A classic kitchen with green cabinets, a large sink, floral wall tiles,
+                     pendant lighting, and a big window overlooking a natural view..</p>
+                    <a href= "https://www.linkedin.com/ " target="_blank">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="pcard" data-search="office workspace minimalist desk">
+            <img src="../images/office.jpg" alt="Project 5">
+            <div class="layer">
+                <h3>Project 5: Office</h3>
+                <p>Design a productive yet peaceful workspace with a minimalist desk, 
+                    ergonomic chair, and botanical accents for inspiration and focus.</p>
+                <a href= "https://www.linkedin.com/" target="_blank">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div> 
+        <div class="pcard" data-search="dining room table chair soft lighting plants wooden">
+            <img src="../images/88.jpg" alt="Project 6">
+            <div class="layer">
+                <h3>Project 6: Cozy Dining Room</h3>
+                <p>A dining room with a round wooden table, comfy chairs, a woven pendant light,
+                        and elegant decor with plants and wall art.</p>
+                    <a href= "https://www.linkedin.com/ " target="_blank">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="pcard" data-search="kitchen soft lighting plants wooden">
+            <img src="../images/kitch.jpg" alt="Project 7">
+            <div class="layer">
+                <h3>Project 7: Kitchen</h3>
+                <p>A kitchen with wooden cabinets, marble backsplash with soft lighting.
+                    Dried plants add a natural touch for a functional and elegant cooking space.</p>
+                    <a href= "https://www.linkedin.com/" target="_blank">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="pcard" data-search="bathroom wooden soft lighting natural">
+            <img src="../images/bath2.jpg" alt="Project 8">
+            <div class="layer">
+                <h3>Project 8: Bathroom</h3>
+                <p>Transform your bathroom into a tranquil oasis with natural light, lush indoor plants,
+                    and a cozy quilted bedspread.Perfect harmony of nature and comfort.</p>
+                    <a href= "https://www.linkedin.com/ " target="_blank">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>           
+        <div class="pcard" data-search="nook cozy wooden mirror minimalist">
+            <img src="../images/99.jpg" alt="Project 9">
+            <div class="layer">
+                <h3>Project 9: Modern Entryway Nook</h3>
+                <p>A simple entryway with a cozy bench and cushions, a large wooden-framed mirror,
+                        plant decor, and soft lighting..</p>
+                    <a href= "https://www.linkedin.com/ " target="_blank">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <p class="noMatch">No result found</p>
+    <button class="seeMore"><a href="https://www.linkedin.com/" target="_blank">See More</a></button>
+  <!-- -----------------------------footer----------------------------------   -->
+   <footer >
+    <div class="foot">
+      <div class="row">
+         <div class="footer_col">
+            <h4 >Sandra Smith <br>for home designs&copy;</h4>
+         </div>
+         <div class="footer_col">
+            <h3>more designs</h3>
+            <ul>
+               <li><a href="http://instagram.com">Instagram</a></li>
+               <li><a href="http://linkedin.com">linkedin</a></li>
+            </ul>
+         </div>
+         <div class="footer_col">
+            <h3>Get help</h3>
+            <ul>
+              <li><a href="home.html#faq">FAQ</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+         </div>
+         <div class="footer_col">
+            <h3>Follow Me</h3>
+            <div class="social-link">
+               <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+               <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+               <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+               <a href="http://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a><br>
+              <!-- <button onclick="logout()">Logout</button> -->
+            </div>
+          </div>
+        </div>
+     </div>
+     </footer>
+    <script src="../JS/projects.js"></script> 
+</body>
+</html

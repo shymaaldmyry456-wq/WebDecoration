@@ -1,17 +1,12 @@
-Decor Studio
+Project Description
 
-A modern and responsive website for an interior design and decoration office. The website showcases interior design projects, decoration services, and creative ideas for homes and offices.
+A personal Interior Design Portfolio Website created for an interior designer to showcase her services, projects, skills, and professional experience. The website allows visitors to learn more about the designer, explore her previous work, discover the services she offers, and easily get in touch with her.
 
-Technologies Used: HTML, CSS, JavaScript.
+The website includes several sections:
 
-Features:
-
-Responsive design
-
-Interior design gallery
-
-Decoration services
-
-About Us section
-
-Contact section
+- Home: Introduction and overview of the designer.
+- About: Information about her background, skills, and experience.
+- Services: The interior design services she provides.
+- Projects: A showcase of previous interior design projects.
+- FAQ: Answers to frequently asked questions.
+- Contact: A section for clients to get in touch with the designer.
